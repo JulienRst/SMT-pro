@@ -1,0 +1,14 @@
+@import 'ui/variables.module.scss';
+
+.layoutMain {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-body;
+  color: $body-text;
+
+  .content {
+    flex-grow: 1;
+    overflow: auto;
+  }
+}
