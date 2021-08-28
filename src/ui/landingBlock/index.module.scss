@@ -1,0 +1,5 @@
+@import 'ui/variables.module.scss';
+
+.landingBlock {
+  min-height: calc(100vh - #{$header-size} - #{$footer-size});
+}

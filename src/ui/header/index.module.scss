@@ -3,5 +3,6 @@
 .header {
   background-color: $surface-bg;
   color: $surface-text;
-  padding: $padding-md;
+  height: $header-size;
+  padding: $padding-sm;
 }

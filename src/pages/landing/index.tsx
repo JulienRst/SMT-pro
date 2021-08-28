@@ -1,12 +1,10 @@
+import Hero from 'components/hero';
 import React from 'react';
-import Space from 'ui/space';
 import Layout from '../../layout/main';
 
 const LandingPage: React.FC = () => {
   return <Layout>
-    <Space>
-      SMT !
-    </Space>
+    <Hero />
   </Layout>;
 }
 
