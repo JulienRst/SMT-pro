@@ -13,6 +13,11 @@
     "block4": "Pourquoi SMT ?\nDans tout ce que nous faisons nous défions les modèles standard. Nous croyons aux projets uniques qui correspondent à leurs propriétaires, à l’artisanat Français, à la durabilité et à l’harmonie des formes et des couleurs.",
     "block5": "De quelle manière ? En fabriquant en fonction de nos clients, dans notre atelier en France et en maîtrisant toutes les étapes du dessin à la pose.",
     "block6": "Nous réalisons tout ce qui est en acier: vos fenêtres, vos escaliers, vos verrières, votre portail et plus encore... Nous pouvons même fabriquer ce que vous êtes en train de dessiner sur votre bloc-note.",
-    "soudeurAlt": "soudeur en train de travailler"
+    "soudeurAlt": "soudeur en train de travailler",
+    "atelierAlt": "photo d'un atelier"
+  },
+  "jobs": {
+    "title": "Métiers",
+    "alt": "schéma illustrant les différents corps de métiers composant SMT, des devis à la pose en passant par la peinture et la découpe"
   }
 }
