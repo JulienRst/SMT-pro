@@ -20,6 +20,20 @@
     "title": "Métiers",
     "alt": "schéma illustrant les différents corps de métiers composant SMT, des devis à la pose en passant par la peinture et la découpe"
   },
+  "works": {
+    "title": "Réalisations",
+    "gallery": {
+      "verandas": "Auvents, Pergolas, Vérandas",
+      "fencing": "Clôtures",
+      "stairs": "Escaliers",
+      "guardrail": "Garde-corps",
+      "entrance": "Halls d'entrée",
+      "gate": "Portails",
+      "major-works": "Grands Ouvrages",
+      "canopy": "Verrières",
+      "furnitures": "Mobilier"
+    }
+  },
   "footer": {
     "info": {
       "name": "SMT SAS",

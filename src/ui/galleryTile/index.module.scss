@@ -1,0 +1,47 @@
+@import 'ui/variables.module.scss';
+
+.tileContainer {
+  position: relative;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    opacity: 0.3;
+    background-color: $surface-bg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.3s;
+  }
+
+  &:hover img {
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: 0.3s;
+  }
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+  }
+}

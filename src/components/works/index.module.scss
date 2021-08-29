@@ -1,0 +1,20 @@
+@import 'ui/variables.module.scss';
+
+.pageContainer {
+  width: 100%;
+}
+
+.galleryContainer {
+  flex-wrap: wrap;
+  max-width: 910px;
+  width: 100%;
+}
+
+.galleryTile {
+  width: calc(33% - 2/3 * #{$padding-sm});
+  margin-bottom: $padding-sm;
+
+  &:nth-child(3n) {
+    margin-right: 0 !important; // Override Space margin, we could also not use a Space to avoid to use important
+  }
+}
