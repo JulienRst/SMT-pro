@@ -3,11 +3,15 @@ import Menu from '../../components/menu';
 import Footer from '../../components/footer';
 import styles from './index.module.scss';
 
-const Layout: React.FC = ({ children }) => {
+interface LayoutProps {
+  scrollableRef?: React.RefObject<HTMLDivElement>
+}
+
+const Layout: React.FC<LayoutProps> = ({ children, scrollableRef }) => {
   return (
     <div className={styles.layoutMain}>
       <Menu />
-      <div className={styles.content} >{children}</div>
+      <div ref={scrollableRef} className={styles.content} >{children}</div>
       <Footer />
     </div>
   )

@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import styles from './index.module.scss';
 
 interface SpaceProps {
+  id?: string;
   className?: string;
   direction?: 'vertical' | 'horizontal';
   align?: 'start' | 'middle' | 'end' | 'baseline';
@@ -15,9 +16,11 @@ const Space: React.FC<SpaceProps> = ({
   size = 'small',
   className,
   children,
+  id,
 }) => {
   return (
     <div
+      id={id}
       className={classnames(
         styles.space,
         styles[`dir-${direction}`],

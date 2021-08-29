@@ -28,7 +28,7 @@
       }
     }
 
-    &.size-middle {
+    &.size-medium {
       & > *:not(:last-child) {
         margin-right: $padding-md;
       }
@@ -50,7 +50,7 @@
       }
     }
 
-    &.size-middle {
+    &.size-medium {
       & > *:not(:last-child) {
         margin-bottom: $padding-md;
       }

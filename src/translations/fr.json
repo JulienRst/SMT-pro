@@ -1,7 +1,7 @@
 {
   "menu": {
     "smt": "SMT",
-    "business": "Métiers",
+    "jobs": "Métiers",
     "works": "Réalisations",
     "contact": "Contact"
   },
@@ -19,5 +19,15 @@
   "jobs": {
     "title": "Métiers",
     "alt": "schéma illustrant les différents corps de métiers composant SMT, des devis à la pose en passant par la peinture et la découpe"
+  },
+  "footer": {
+    "info": {
+      "name": "SMT SAS",
+      "location": "ZA Grange Neuve 39790 Diemoz",
+      "siret": "Siret 48919819200036",
+      "mail": "contact@smt-pro.fr",
+      "phone": "04 72 48 59 73"
+    },
+    "copy": "Copyright © Serrurerie Métallerie Tôlerie"
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import Routes from 'routes';
 import images from 'ui/images';
 import LandingBlock from 'ui/landingBlock';
 import Space from 'ui/space';
@@ -8,7 +9,7 @@ import Title from 'ui/title';
 const Introduction: React.FC = () => {
   const { t } = useTranslation();
 
-  return <LandingBlock>
+  return <LandingBlock slug={Routes.Smt}>
     <Space direction="vertical" align="middle" size="large">
       <Title>{t('smt.title')}</Title>
       <Space direction="vertical">

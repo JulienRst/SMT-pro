@@ -1,0 +1,32 @@
+@import 'ui/variables.module.scss';
+
+.menuItems {
+  max-width: $max-width-layout;
+  width: 100%;
+  margin: auto;
+}
+
+.menuLink {
+  margin-top: 6px; // use to counter bad line-height of the typo
+  font-size: 20px;
+  font-family: $font-title;
+  text-transform: uppercase;
+  position: relative;
+  
+  &::after {
+    content: '';
+    width: 0%;
+    background-color: $surface-text;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+    transition: 0.3s;
+  }
+}

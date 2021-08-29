@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LandingPage from './pages/landing';
 import 'ui/reset.scss';
 import './translations';
+import Router from 'Router';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <LandingPage />
-  </React.StrictMode>,
+  <Router />,
   document.getElementById('root')
 );

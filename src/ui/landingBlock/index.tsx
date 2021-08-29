@@ -2,13 +2,15 @@ import React from 'react';
 import styles from './index.module.scss';
 import Space from 'ui/space';
 import classnames from 'classnames';
+import Routes from 'routes';
 
 interface LandingBlockProps {
   full?: boolean;
+  slug?: Routes;
 }
 
-const LandingBlock: React.FC<LandingBlockProps> = ({ children, full = false }) => {
-  return <Space className={classnames(styles.landingBlock, !full && styles.withPadding)}>{children}</Space>
+const LandingBlock: React.FC<LandingBlockProps> = ({ children, full = false, slug }) => {
+  return <Space id={slug} className={classnames(styles.landingBlock, !full && styles.withPadding)}>{children}</Space>
 }
 
 export default LandingBlock;
