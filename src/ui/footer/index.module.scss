@@ -3,7 +3,8 @@
 .footer {
   background-color: $surface-bg;
   color: $surface-text;
-  padding: $padding-sm;
+  padding: $padding-sm calc((100% - #{$max-width-layout}) / 2);
+  width: 100%;
   max-height: $footer-size;
   height: 100%;
 }
