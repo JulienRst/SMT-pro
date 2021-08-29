@@ -23,19 +23,19 @@
     flex-direction: row;
 
     &.size-small {
-      *:not(:last-child) {
+      & > *:not(:last-child) {
         margin-right: $padding-sm;
       }
     }
 
     &.size-middle {
-      *:not(:last-child) {
+      & > *:not(:last-child) {
         margin-right: $padding-md;
       }
     }
 
     &.size-large {
-      *:not(:last-child) {
+      & > *:not(:last-child) {
         margin-right: $padding-lg;
       }
     }
@@ -45,19 +45,19 @@
     flex-direction: column;
 
     &.size-small {
-      *:not(:last-child) {
+      & > *:not(:last-child) {
         margin-bottom: $padding-sm;
       }
     }
 
     &.size-middle {
-      *:not(:last-child) {
+      & > *:not(:last-child) {
         margin-bottom: $padding-md;
       }
     }
 
     &.size-large {
-      *:not(:last-child) {
+      & > *:not(:last-child) {
         margin-bottom: $padding-lg;
       }
     }

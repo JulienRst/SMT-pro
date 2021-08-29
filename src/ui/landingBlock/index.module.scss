@@ -3,3 +3,10 @@
 .landingBlock {
   min-height: calc(100vh - #{$header-size} - #{$footer-size});
 }
+
+.withPadding {
+  padding: $padding-lg;
+  max-width: $max-width-layout;
+  width: 100%;
+  margin: auto;
+}
