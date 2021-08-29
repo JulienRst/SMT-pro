@@ -1,0 +1,13 @@
+.contactContainer {
+  width: 100%;
+
+  .contactBlockContainer {
+    width: 100%;
+    justify-content: space-around;
+    .contactBlock {
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

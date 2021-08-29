@@ -12,6 +12,9 @@ import Mobiliers from './gallery/category/mobilier.png';
 import Portails from './gallery/category/portails.png';
 import Verandas from './gallery/category/verandas.png';
 import Verrieres from './gallery/category/verrieres.png';
+import Email from './contact/email.png';
+import Factory from './contact/factory.png';
+import Phone from './contact/phone.png';
 
 const images = {
   SoudeurHero,
@@ -31,6 +34,11 @@ const images = {
       Verandas,
       Verrieres,
     }
+  },
+  Contact: {
+    Email,
+    Factory,
+    Phone,
   }
 }
 

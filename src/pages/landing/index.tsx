@@ -7,6 +7,7 @@ import Jobs from 'components/jobs';
 import Hero from 'components/hero';
 import Introduction from 'components/introduction';
 import Works from 'components/works';
+import Contact from 'components/contact';
 
 interface LandingPageRouteParams {
   slug: Routes.Smt | Routes.Jobs;
@@ -20,7 +21,7 @@ const LandingPage: React.FC = () => {
   useEffect(() => {
     // Check that slug is one of the correct value
     if (Object.values(Routes).includes(slug)) {
-      scrollableRef.current?.scrollTo({ top: document.getElementById(slug)?.offsetTop, behavior: 'smooth' });
+      scrollableRef.current?.scrollTo({ top: (document.getElementById(slug)?.offsetTop || 0) - 60, behavior: 'smooth' });
     }
   }, [slug])
 
@@ -30,6 +31,7 @@ const LandingPage: React.FC = () => {
     <Introduction />
     <Jobs />
     <Works />
+    <Contact />
   </Layout>;
 }
 

@@ -34,6 +34,12 @@
       "furnitures": "Mobilier"
     }
   },
+  "contact": {
+    "title": "Contact",
+    "phone": "Lundi au Vendredi\n9h - 18h\n04 72 48 59 73",
+    "factory": "SMT\nZA Grange Neuve\n38790 Diemoz",
+    "mail": "\ncontact@smt-pro.fr"
+  },
   "footer": {
     "info": {
       "name": "SMT SAS",
