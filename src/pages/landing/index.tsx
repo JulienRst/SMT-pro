@@ -1,10 +1,12 @@
-import Hero from 'components/hero';
-import Introduction from 'components/introduction';
-import Jobs from 'components/jobs';
 import React, { useEffect, useRef } from 'react';
 import Layout from '../../layout/main';
 import { useParams } from 'react-router-dom';
 import Routes from 'routes';
+// Landing Part
+import Jobs from 'components/jobs';
+import Hero from 'components/hero';
+import Introduction from 'components/introduction';
+import Works from 'components/works';
 
 interface LandingPageRouteParams {
   slug: Routes.Smt | Routes.Jobs;
@@ -27,6 +29,7 @@ const LandingPage: React.FC = () => {
     <Hero />
     <Introduction />
     <Jobs />
+    <Works />
   </Layout>;
 }
 

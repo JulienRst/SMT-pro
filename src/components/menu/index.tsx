@@ -20,6 +20,11 @@ const Menu: React.FC = () => {
       key: '1',
       label: t('menu.jobs'),
       to: Routes.Jobs,
+    },
+    {
+      key: '2',
+      label: t('menu.works'),
+      to: Routes.Works,
     }
   ]
   
