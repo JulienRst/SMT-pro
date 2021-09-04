@@ -13,6 +13,7 @@
 .galleryTile {
   width: calc(33% - 2/3 * #{$padding-sm});
   margin-bottom: $padding-sm;
+  cursor: pointer;
 
   &:nth-child(3n) {
     margin-right: 0 !important; // Override Space margin, we could also not use a Space to avoid to use important

@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
 
   return (
     <UIFooter>
-      <div className={styles.footerContent}>
+      <Space className={styles.footer} justify="space-between">
         <Space>
           <span>{t('footer.info.name')}</span>
           <span>{t('footer.info.location')}</span>
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         <Space>
           {t('footer.copy')}
         </Space>
-      </div>
+      </Space>
     </UIFooter>
   )
 }

@@ -15,6 +15,7 @@ import Verrieres from './gallery/category/verrieres.png';
 import Email from './contact/email.png';
 import Factory from './contact/factory.png';
 import Phone from './contact/phone.png';
+import Carousel from './gallery/carousel';
 
 const images = {
   SoudeurHero,
@@ -33,7 +34,8 @@ const images = {
       Portails,
       Verandas,
       Verrieres,
-    }
+    },
+    Carousel,
   },
   Contact: {
     Email,

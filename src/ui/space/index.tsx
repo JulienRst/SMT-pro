@@ -1,19 +1,20 @@
 import React from 'react';
 import classnames from 'classnames';
-import styles from './index.module.scss';
-
+import './index.scss';
 interface SpaceProps {
   id?: string;
   className?: string;
   direction?: 'vertical' | 'horizontal';
   align?: 'start' | 'middle' | 'end' | 'baseline';
   size?: 'small' | 'medium' | 'large';
+  justify?: 'start' | 'center' | 'space-around' | 'space-between' | 'end';
 }
 
 const Space: React.FC<SpaceProps> = ({
   direction = 'horizontal',
   align = 'start',
   size = 'small',
+  justify = 'start',
   className,
   children,
   id,
@@ -22,10 +23,11 @@ const Space: React.FC<SpaceProps> = ({
     <div
       id={id}
       className={classnames(
-        styles.space,
-        styles[`dir-${direction}`],
-        styles[`align-${align}`],
-        styles[`size-${size}`],
+        'space',
+        `dir-${direction}`,
+        `align-${align}`,
+        `size-${size}`,
+        `justify-${justify}`,
         className,
       )}
     >

@@ -3,6 +3,26 @@
 .space {
   display: flex;
 
+  &.justify-start {
+    justify-content: flex-start;
+  }
+  
+  &.justify-end {
+    justify-content: flex-end;
+  }
+
+  &.justify-center {
+    justify-content: center;
+  }
+
+  &.justify-space-around {
+    justify-content: space-around;
+  }
+
+  &.justify-space-between {
+    justify-content: space-between;
+  }
+
   &.align-start {
     align-items: flex-start;
   }

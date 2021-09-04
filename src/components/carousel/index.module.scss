@@ -1,0 +1,42 @@
+@import 'ui/variables.module.scss';
+
+.galleryContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: $padding-lg;
+  background-color: $black;
+
+  .close {
+    cursor: pointer;
+    width: $padding-lg;
+    height: $padding-lg;
+    position: absolute;
+    top: $padding-lg;
+    right: $padding-lg;
+    z-index: 1001;
+
+    &::after, &::before {
+      cursor: pointer;
+      content: '';
+      background-color: white;
+      width: 100%;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+    }
+
+    &::after {
+      transform-origin: center;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform-origin: center;
+      transform: rotate(-45deg);
+    }
+  }
+}
