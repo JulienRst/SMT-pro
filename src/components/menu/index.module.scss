@@ -1,5 +1,14 @@
 @import 'ui/variables.module.scss';
 
+@media (max-width: $mobile-nav) {
+  .menuItemsContainer {
+    height: 100%;
+    .menuItems {
+      height: 100%;
+    }
+  }
+}
+
 .menuItems {
   max-width: $max-width-layout;
   width: 100%;

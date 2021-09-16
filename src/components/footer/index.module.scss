@@ -1,13 +1,5 @@
 @import 'ui/variables.module.scss';
 
-@media (max-width: 1050px) {
-  div.footer {
-   flex-direction: column;
-   align-items: center;
-   justify-content: flex-start;
- }
-}
-
 .footer {
   padding: 0 $padding-md;
 }

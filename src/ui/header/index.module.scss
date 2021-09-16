@@ -7,3 +7,20 @@
   height: 100%;
   padding: $padding-sm;
 }
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100vw;
+  z-index: 500;
+  background-color: $surface-bg;
+  transition: 0.3s;
+  overflow: hidden;
+
+  &.active {
+    height: 100vh;
+    transition: 0.3s;
+  }
+}

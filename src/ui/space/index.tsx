@@ -4,7 +4,7 @@ import './index.scss';
 interface SpaceProps {
   id?: string;
   className?: string;
-  direction?: 'vertical' | 'horizontal';
+  direction?: 'vertical' | 'horizontal' | 'reverse-vertical' | 'reverse-horizontal';
   align?: 'start' | 'middle' | 'end' | 'baseline';
   size?: 'small' | 'medium' | 'large';
   justify?: 'start' | 'center' | 'space-around' | 'space-between' | 'end';

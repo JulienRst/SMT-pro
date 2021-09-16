@@ -20,3 +20,9 @@ $font-body: 'Source Sans Pro';
 $header-size: 60px;
 $footer-size: 48px;
 $max-width-layout: 1240px;
+// BREAK-POINT
+$mobile-nav: 470px;
+
+:export {
+  mobileNav: $mobile-nav;
+}
