@@ -43,5 +43,9 @@
     color: white;
     text-align: center;
     font-size: 28px;
+
+    @media (max-width: 750px) {
+      font-size: 3vw;
+    }
   }
 }

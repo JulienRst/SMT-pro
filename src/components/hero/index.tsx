@@ -1,6 +1,7 @@
 import React from 'react';
 import images from 'ui/images';
 import LandingBlock from 'ui/landingBlock';
+import Logo from 'ui/logo';
 import styles from './index.module.scss';
 
 const Hero: React.FC = () => {
@@ -10,7 +11,7 @@ const Hero: React.FC = () => {
         <img src={images.SoudeurHero} alt="soudeur" />
       </div>
       <div className={styles.title}>
-        <img src={images.Logo} alt="logo" />
+        <Logo />
       </div>
     </div>
   </LandingBlock>;

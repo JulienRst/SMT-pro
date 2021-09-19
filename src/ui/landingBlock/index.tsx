@@ -10,7 +10,15 @@ interface LandingBlockProps {
 }
 
 const LandingBlock: React.FC<LandingBlockProps> = ({ children, full = false, slug }) => {
-  return <Space id={slug} className={classnames(styles.landingBlock, !full && styles.withPadding)}>{children}</Space>
+  return (
+    <Space
+      id={slug}
+      direction="vertical"
+      className={classnames(styles.landingBlock, !full && styles.withPadding)}
+    >
+      {children}
+    </Space>
+  );
 }
 
 export default LandingBlock;

@@ -1,7 +1,7 @@
 @import 'ui/variables.module.scss';
 
 .landingBlock {
-  min-height: calc(100vh - #{$header-size} - #{$footer-size});
+  min-height: calc(var(--vh, 1vh) * 100 - #{$header-size} - #{$footer-size});
 }
 
 .withPadding {

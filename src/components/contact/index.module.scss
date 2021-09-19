@@ -1,11 +1,15 @@
+@import 'ui/variables.module.scss';
+
 .contactContainer {
   width: 100%;
+  flex-grow: 1;
+  padding-top: $padding-lg;
 
   .contactBlockContainer {
     width: 100%;
     justify-content: space-around;
     .contactBlock {
-      p {
+      p, a {
         text-align: center;
       }
     }

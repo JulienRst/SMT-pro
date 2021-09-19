@@ -1,3 +1,5 @@
+import Map from 'components/map';
+import config from 'config';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Routes from 'routes';
@@ -10,37 +12,33 @@ import styles from './index.module.scss';
 const Contact: React.FC = () => {
   const { t } = useTranslation();
 
-  const contactData = [
-    {
-      key: 0,
-      img: images.Contact.Phone,
-      content: t('contact.phone'),
-    },
-    {
-      key: 1,
-      img: images.Contact.Factory,
-      content: t('contact.factory'),
-    },
-    {
-      key: 2,
-      img: images.Contact.Email,
-      content: t('contact.mail'),
-    }
-  ];
-
-  return <LandingBlock slug={Routes.Contact}>
-    <Space className={styles.contactContainer} direction="vertical" size="large" align="middle">
-      <Title>{t('contact.title')}</Title>
-      <Space className={styles.contactBlockContainer}>
-        {contactData.map((data) => (
-          <Space className={styles.contactBlock} direction="vertical" size="medium" align="middle" key={data.key}>
-            <img src={data.img} alt={data.content} />
-            <p>{data.content}</p>
+  return (
+    <LandingBlock full slug={Routes.Contact}>
+      <Space className={styles.contactContainer} direction="vertical" size="large" align="middle">
+        <Title>{t('contact.title')}</Title>
+        <Space className={styles.contactBlockContainer}>
+          <a href={`tel:${config.phone}`}>
+            <Space className={styles.contactBlock} direction="vertical" size="medium" align="middle">
+              <img src={images.Contact.Phone} alt={t('contact.phone', { phone: config.dspPhone })} />
+              <p>{t('contact.phone', { phone: config.dspPhone })}</p>
+            </Space>
+          </a>
+          <Space className={styles.contactBlock} direction="vertical" size="medium" align="middle">
+            <img src={images.Contact.Factory} alt={t('contact.factory')} />
+            <p>{t('contact.factory')}</p>
           </Space>
-        ))}
+          <a href={`mailto:${config.email}`}>
+            <Space className={styles.contactBlock} direction="vertical" size="medium" align="middle">
+              <img src={images.Contact.Email} alt={config.email} />
+              <br />
+                <p>{config.email}</p>
+            </Space>
+          </a>
+        </Space>
+        <Map />
       </Space>
-    </Space>
-  </LandingBlock>;
+    </LandingBlock>
+  );
 }
 
 export default Contact;

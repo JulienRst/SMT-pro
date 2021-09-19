@@ -1,0 +1,10 @@
+.map {
+  width: 100vw;
+  flex-grow: 1;
+  height: 0; // Force flex to render properly
+}
+
+.marker {
+  width: 25px;
+  transform: translate(-50%, -50%);
+}
