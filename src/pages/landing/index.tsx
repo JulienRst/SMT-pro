@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Layout from '../../layout/main';
 import { useParams } from 'react-router-dom';
 import Routes from 'routes';
+import analytics from 'technical/analytics';
 // Landing Part
 import Jobs from 'components/jobs';
 import Hero from 'components/hero';
@@ -10,7 +11,7 @@ import Works from 'components/works';
 import Contact from 'components/contact';
 
 interface LandingPageRouteParams {
-  slug: Routes.Smt | Routes.Jobs;
+  slug: Routes;
 }
 
 const LandingPage: React.FC = () => {
@@ -19,6 +20,8 @@ const LandingPage: React.FC = () => {
   const scrollableRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Run Analytics
+    analytics.page();
     // Check that slug is one of the correct value
     if (Object.values(Routes).includes(slug)) {
       scrollableRef.current?.scrollTo({ top: (document.getElementById(slug)?.offsetTop || 0) - 60, behavior: 'smooth' });
