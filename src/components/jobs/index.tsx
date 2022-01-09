@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Routes from 'routes';
 import useWindowDimensions from 'technical/window/useWindowDimensions';
 import images from 'ui/images';
+import ImgWithFallBack from 'ui/imgWithFallBack';
 import LandingBlock from 'ui/landingBlock';
 import Space from 'ui/space';
 import Title from 'ui/title';
@@ -20,7 +21,7 @@ const Jobs: React.FC = () => {
   return <LandingBlock slug={Routes.Jobs}>
     <Space direction="vertical" size="large" align="middle">
       <Title>{t('jobs.title')}</Title>
-      <img className={styles.jobs} src={isVertical ? images.Jobs.vertical : images.Jobs.hortizontal} alt={t('jobs.alt')} />
+      <ImgWithFallBack className={styles.jobs} src={isVertical ? images.Jobs.vertical : images.Jobs.hortizontal} alt={t('jobs.alt')} />
     </Space>
   </LandingBlock>
 }
