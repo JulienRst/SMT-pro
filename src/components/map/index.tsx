@@ -3,6 +3,7 @@ import config from 'config';
 import styles from './index.module.scss';
 import GoogleMapReact from 'google-map-react';
 import images from 'ui/images';
+import ImgWithFallBack from 'ui/imgWithFallBack';
 
 interface ComponentToMapProps {
   lat: number;
@@ -16,7 +17,7 @@ const defaultLocation = {
 
 const ComponentToMap: React.FC<ComponentToMapProps> = () => {
   return (
-    <img className={styles.marker} src={images.Marker} alt="marker" />
+    <ImgWithFallBack className={styles.marker} src={images.Marker} alt="marker" />
   );
 } 
 

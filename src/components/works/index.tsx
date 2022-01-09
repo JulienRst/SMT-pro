@@ -13,7 +13,10 @@ import { ReactImageGalleryItem } from 'react-image-gallery';
 interface GalleryItem {
   key: number;
   name: string;
-  img: string;
+  img: {
+    main: string;
+    fallback: string;
+  };
   images: ReactImageGalleryItem[];
 }
 

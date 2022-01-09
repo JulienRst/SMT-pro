@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Routes from 'routes';
 import useWindowDimensions from 'technical/window/useWindowDimensions';
 import images from 'ui/images';
+import ImgWithFallBack from 'ui/imgWithFallBack';
 import LandingBlock from 'ui/landingBlock';
 import Space from 'ui/space';
 import Title from 'ui/title';
@@ -25,10 +26,10 @@ const Introduction: React.FC = () => {
             <p>{t('smt.block2')}</p>
             <p>{t('smt.block3')}</p>
           </Space>
-          <img src={images.SoudeurSmall} alt={t('smt.soudeurAlt')} />
+          <ImgWithFallBack src={images.SoudeurSmall} alt={t('smt.soudeurAlt')} />
         </Space>
         <Space direction={isMobile ? 'vertical' : 'horizontal'} align={isMobile ? 'middle' : undefined} size="large">
-          <img src={images.Atelier} alt={t('smt.atelierAlt')} />
+          <ImgWithFallBack src={images.Atelier} alt={t('smt.atelierAlt')} />
           <Space direction="vertical">
             <p>{t('smt.block4')}</p>
             <p>{t('smt.block5')}</p>
